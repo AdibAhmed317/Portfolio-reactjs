@@ -43,7 +43,7 @@
   overflow: hidden;
 }
 
-.title-wrapper {
+.i-title-wrapper {
   height: 100%;
   animation: move 8s ease-in-out infinite alternate;
 }

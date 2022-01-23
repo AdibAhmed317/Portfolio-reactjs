@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './intro.css';
 import ad from '../../images/ad.png';
 
@@ -10,7 +11,7 @@ const Intro = () => {
           <h2 className='left-intro'>Hi, I'm </h2>
           <h1 className='left-name'>Adib Ahmed</h1>
           <div className='intro-title'>
-            <div className='title-wrapper'>
+            <div className='i-title-wrapper'>
               <div className='title-item'>Full Stack Web Developer</div>
               <div className='title-item'>Mobile App Developer</div>
               <div className='title-item'>Game Developer</div>

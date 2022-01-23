@@ -4,7 +4,7 @@ import info from '../../images/info.png';
 
 const About = () => {
   return (
-    <div className='container'>
+    <div className='a-container'>
       <div className='a-left'>
         <div className='a-card bg'></div>
         <div className='a-card'>
