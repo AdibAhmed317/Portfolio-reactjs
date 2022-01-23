@@ -5,35 +5,65 @@ import ad from '../../images/ad.png';
 
 const Intro = () => {
   return (
-    <div className='intro-container'>
-      <div className='intro-left'>
-        <div className='left-wrapper'>
-          <h2 className='left-intro'>Hi, I'm </h2>
-          <h1 className='left-name'>Adib Ahmed</h1>
-          <div className='intro-title'>
-            <div className='i-title-wrapper'>
-              <div className='title-item'>Full Stack Web Developer</div>
-              <div className='title-item'>Mobile App Developer</div>
-              <div className='title-item'>Game Developer</div>
-            </div>
+    <>
+      <header className='max-h-full bg-yellow-200 p-6 grid pb-60 pt-10'>
+        <div className='mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40 container'>
+          <div className='grid justify-center items-center order-1 col-span-1'>
+            <img
+              className='lg:h-80 md:h-64 h-40 rounded-full'
+              src={ad}
+              alt='logo'
+            />
           </div>
-          <div className='intro-desc'>
-            <p>
+          <div className='mt-8 md:mt-0 lg:justify-end col-span-2'>
+            <h1 className='text-4xl text-gray-800 text-center md:text-left font-bold mb-6'>
+              Hi, I am Adib Ahmed
+              <br /> Full Stack Web Developer
+            </h1>
+            <p className='text-xl text-gray-800 text-center md:text-left'>
               Welcome to my website my name is Adib Ahmed. I am a Web & Mobile
               developer with little bit of experience in Unity game engine. If
               you have any project or if you want to make a software for your
               business contact me.Hope that you'll like my work if you don't
               i'll change until you are satisfied.
             </p>
+            <button className='block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-yellow-200 font-semibold rounded bg-gray-800'>
+              Learn More
+            </button>
           </div>
         </div>
-      </div>
-      <div className='intro-right'>
-        <div className='i-bg'></div>
-        <img src={ad} alt='' className='i-img' />
-      </div>
-    </div>
+      </header>
+    </>
   );
 };
-
 export default Intro;
+
+//     <div className='intro-container'>
+//       <div className='intro-left'>
+//         <div className='left-wrapper'>
+//           <h2 className='left-intro'>Hi, I'm </h2>
+//           <h1 className='left-name'>Adib Ahmed</h1>
+//           <div className='intro-title'>
+//             <div className='i-title-wrapper'>
+//               <div className='title-item'>Full Stack Web Developer</div>
+//               <div className='title-item'>Mobile App Developer</div>
+//               <div className='title-item'>Game Developer</div>
+//             </div>
+//           </div>
+//           <div className='intro-desc'>
+//             <p>
+//               Welcome to my website my name is Adib Ahmed. I am a Web & Mobile
+//               developer with little bit of experience in Unity game engine. If
+//               you have any project or if you want to make a software for your
+//               business contact me.Hope that you'll like my work if you don't
+//               i'll change until you are satisfied.
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+//       <div className='intro-right'>
+//         <div className='i-bg'></div>
+//         <img src={ad} alt='' className='i-img' />
+//       </div>
+//     </div>
+// };
