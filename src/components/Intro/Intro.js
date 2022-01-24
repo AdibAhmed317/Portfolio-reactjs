@@ -10,15 +10,15 @@ const Intro = () => {
         <div className='mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40 container'>
           <div className='grid justify-center items-center order-1 col-span-1'>
             <img
-              className='lg:h-80 md:h-64 h-40 rounded-full'
+              className='lg:h-96 md:h-64 h-40 rounded-full'
               src={ad}
               alt='logo'
             />
           </div>
           <div className='mt-8 md:mt-0 lg:justify-end col-span-2'>
-            <h1 className='text-4xl text-gray-800 text-center md:text-left font-bold mb-6'>
+            <h1 className='text-5xl text-gray-800 text-center md:text-left font-bold mb-6'>
               Hi, I am Adib Ahmed
-              <br /> Full Stack Web Developer
+              <br /> Full Stack Web & Mobile App Developer
             </h1>
             <p className='text-xl text-gray-800 text-center md:text-left'>
               Welcome to my website my name is Adib Ahmed. I am a Web & Mobile
@@ -28,7 +28,13 @@ const Intro = () => {
               i'll change until you are satisfied.
             </p>
             <button className='block mt-8 mx-auto md:mx-0 text-2xl py-3 px-6 text-yellow-200 font-semibold rounded bg-gray-800'>
-              Learn More
+              <a
+                href='https://www.linkedin.com/in/adib-ahmed-9b08551a0/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Learn More
+              </a>
             </button>
           </div>
         </div>

@@ -1,34 +1,39 @@
 import React from 'react';
 import './about.css';
-import info from '../../images/info.png';
+import about from '../../images/about.jpg';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <div className='a-container'>
-      <div className='a-left'>
-        <div className='a-card bg'></div>
-        <div className='a-card'>
-          <img src={info} alt='' className='a-img' />
-        </div>
-      </div>
-      <div className='a-right'>
-        <div className='description'>
-          <h1 className='a-title'>About Me</h1>
-          <div className='details'>
-            <p className='a-desc'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              consequuntur error quibusdam saepe, hic dolor repellat
-              perspiciatis rem libero modi alias. Saepe, ipsam, corporis quaerat
-              vel assumenda blanditiis numquam adipisci quos quo esse
-              architecto. Quod, perferendis! Illum cum, accusantium, a hic,
-              delectus et quis expedita tempore necessitatibus suscipit
-              veritatis sint. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quos, qui.
-            </p>
+    <>
+      <div class='mx-auto'>
+        <div class='grid grid-cols-1 md:grid-cols-2 h-screen'>
+          <div class='max-h-96 md:h-screen'>
+            <img class='w-screen h-screen object-cover' src={about} alt='' />
+          </div>
+          <div class='flex bg-gray-800 p-10'>
+            <div class='mb-auto mt-auto max-w-lg'>
+              <h1 class='text-4xl uppercase text-yellow-200 pb-1'>About Me</h1>
+              <p class='font-semibold mb-5 text-yellow-200 font-sans text-3xl'>
+                Web & Mobile App Developer
+              </p>
+              <p className='text-yellow-200'>
+                Welcome to my website my name is Adib Ahmed. I am a Web & Mobile
+                developer with little bit of experience in Unity game engine. If
+                you have any project or if you want to make a software for your
+                business contact me.Hope that you'll like my work if you don't
+                i'll change until you are satisfied.
+              </p>
+              <button class='bg-yellow-300 rounded-md py-3 px-7 mt-6 text-gray-800'>
+                <Link className='p-10' to='/contact'>
+                  Email Me
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
