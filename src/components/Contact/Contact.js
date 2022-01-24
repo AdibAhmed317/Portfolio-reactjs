@@ -2,16 +2,12 @@ import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
 import './Contact.css';
-import Phone from '../../images/phone.png';
-import Email from '../../images/email.png';
-import Address from '../../images/address.png';
+import info from '../../images/info.png';
 
 const Contact = () => {
   const formRef = useRef();
 
   const handleSubmit = e => {
-    // e.preventDefault();
-
     emailjs
       .sendForm(
         'service_fohvwed',
@@ -30,48 +26,56 @@ const Contact = () => {
   };
 
   return (
-    <div className='contact'>
-      <div className='contact-bg'></div>
-      <div className='contact-wrapper'>
-        <div className='contact-left'>
-          <div className='contact-title'>Let's Discuss your project</div>
-          <div className='contact-info'>
-            <div className='contact-info-item'>
-              <img src={Phone} alt='' className='contact-icon' />
-              Demo Number
-            </div>
-            <div className='contact-info-item'>
-              <img src={Email} alt='' className='contact-icon' />
-              Demo Email
-            </div>
-            <div className='contact-info-item'>
-              <img src={Address} alt='' className='contact-icon' />
-              Demo Address
-            </div>
-          </div>
+    <div className='h-full bg-gray-800 px-12 py-16 pb-9'>
+      <h1 className='text-5xl font-extralight text-yellow-200 text-center'>
+        Lets discuss your project
+      </h1>
+      <div className='flex flex-row h-screen'>
+        <div className='flex h-3/4 justify-center w-2/4'>
+          <img src={info} alt='' />
         </div>
-        <div className='contact-right'>
-          <p className='contact-desc'>
-            <b>What's your story?</b>
+        <div className='w-2/4 justify-center items-center mt-36'>
+          <p className='contact-desc text-yellow-200 text-3xl'>
+            <b className='font-extrabold'>What's your story?</b>
+            <br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Repudiandae, officiis.
           </p>
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <input type='text' placeholder='Name' name='user_name' />
-            <input type='text' placeholder='Subject' name='user_subject' />
-            <input type='email' placeholder='Email' name='user_email' />
-            <textarea rows='5' placeholder='Message' name='message' />
-            <button>Submit</button>
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className='bg-blue-200 shadow-md rounded px-8 pt-6 pb-8 mb-4'
+          >
+            <input
+              className='bg-blue-200'
+              type='text'
+              placeholder='Name'
+              name='user_name'
+            />
+            <br />
+            <input
+              className='bg-blue-200'
+              type='text'
+              placeholder='Subject'
+              name='user_subject'
+            />
+            <br />
+            <input
+              className='bg-blue-200'
+              type='email'
+              placeholder='Email'
+              name='user_email'
+            />
+            <textarea
+              className='bg-blue-200'
+              rows='5'
+              placeholder='Message'
+              name='message'
+            />
+            <button onClick={handleSubmit}>
+              <h1 className='bg-yellow-200 p-4'>Send</h1>
+            </button>
           </form>
-          {/* <form ref={formRef} onSubmit={handleSubmit}>
-            <label>Name</label>
-            <input type='text' name='user_name' />
-            <label>Email</label>
-            <input type='email' name='user_email' />
-            <label>Message</label>
-            <textarea name='message' />
-            <input type='submit' value='Send' />
-          </form> */}
         </div>
       </div>
     </div>

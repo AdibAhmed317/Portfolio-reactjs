@@ -2,20 +2,17 @@
   height: 100vh;
   position: relative;
 }
-
-.contact-bg {
+\\ .contact-bg {
   width: 20px;
   height: 100%;
   background-color: #101820ff;
   position: absolute;
 }
-
-.contact-wrapper {
+\\ .contact-wrapper {
   padding: 50px;
   display: flex;
 }
-
-.contact-left {
+\\ .contact-left {
   flex: 1;
 }
 

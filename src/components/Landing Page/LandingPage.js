@@ -8,10 +8,10 @@ import ProductList from '../ProductList/ProductList';
 const LandingPage = () => {
   return (
     <>
-      {/* <Try /> */}
       <Intro />
       <About />
       <ProductList />
+      {/* <Try /> */}
       <Contact />
     </>
   );
