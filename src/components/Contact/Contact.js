@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 
 import './Contact.css';
@@ -7,7 +7,14 @@ import info from '../../images/info.png';
 const Contact = () => {
   const formRef = useRef();
 
+  const [name, setName] = useState('');
+  const [subject, setSubject] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
   const handleSubmit = e => {
+    e.preventDefault();
+
     emailjs
       .sendForm(
         'service_fohvwed',
@@ -23,6 +30,11 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+
+    setName('');
+    setSubject('');
+    setEmail('');
+    setMessage('');
   };
 
   return (
@@ -51,6 +63,8 @@ const Contact = () => {
               type='text'
               placeholder='Name'
               name='user_name'
+              value={name}
+              onChange={e => setName(e.target.value)}
             />
             <br />
             <input
@@ -58,6 +72,8 @@ const Contact = () => {
               type='text'
               placeholder='Subject'
               name='user_subject'
+              value={subject}
+              onChange={e => setSubject(e.target.value)}
             />
             <br />
             <input
@@ -65,12 +81,16 @@ const Contact = () => {
               type='email'
               placeholder='Email'
               name='user_email'
+              value={email}
+              onChange={e => setEmail(e.target.value)}
             />
             <textarea
               className='bg-blue-200'
               rows='5'
               placeholder='Message'
               name='message'
+              value={message}
+              onChange={e => setMessage(e.target.value)}
             />
             <button onClick={handleSubmit}>
               <h1 className='bg-yellow-200 p-4'>Send</h1>
