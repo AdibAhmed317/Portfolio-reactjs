@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = ({ toggle }) => {
   return (
     <nav className='bg-gray-800 flex justify-between items-center h-16 text-yellow-200 text-xl font-medium'>
-      <Link to='/' className='pl-8 font-normal text-4xl'>
+      <Link to='/' className='pl-8 font-normal text-2xl lg:text-4xl'>
         Adib's Paradise
       </Link>
       <div className='px-4 cursor-pointer md:hidden' onClick={toggle}>

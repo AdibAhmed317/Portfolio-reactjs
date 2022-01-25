@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './intro.css';
 import ad from '../../images/ad.png';
 
 const Intro = () => {
@@ -9,18 +8,15 @@ const Intro = () => {
       <header className='max-h-full bg-yellow-200 p-6 grid pb-60 pt-10'>
         <div className='mx-auto mt-8 md:mt-0 md:space-x-10 md:grid grid-cols-3 justify-center md:py-40 container'>
           <div className='grid justify-center items-center order-1 col-span-1'>
-            <img
-              className='lg:h-96 md:h-64 h-40 rounded-full'
-              src={ad}
-              alt='logo'
-            />
+            <img className='h-72 lg:h-96 rounded-full' src={ad} alt='logo' />
           </div>
           <div className='mt-8 md:mt-0 lg:justify-end col-span-2'>
-            <h1 className='text-5xl text-gray-800 text-center md:text-left font-bold mb-6'>
-              Hi, I am Adib Ahmed
+            <h1 className='text-3xl text-left lg:text-5xl text-gray-800 md:text-left font-bold mb-6'>
+              Hi,
+              <br /> I am Adib Ahmed
               <br /> Full Stack Web & Mobile App Developer
             </h1>
-            <p className='text-xl text-gray-800 text-center md:text-left'>
+            <p className='text-xl text-gray-800 text-left md:text-left'>
               Welcome to my website my name is Adib Ahmed. I am a Web & Mobile
               developer with little bit of experience in Unity game engine. If
               you have any project or if you want to make a software for your
