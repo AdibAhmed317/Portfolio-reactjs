@@ -22,7 +22,7 @@ const SkillSection = () => {
       <div className='flex items-center mt-6 text-white md:text-4xl font-bold'>
         <h1 className='font-thin text-5xl text-yellow-200'>My Skills</h1>
       </div>
-      <div className='grid grid-cols-3 text-center text-base md:text-2xl text-white w-full'>
+      <div className='grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 text-center text-base md:text-2xl text-white w-full'>
         <div>
           <Skill skill='HTML' logo={html} />
         </div>

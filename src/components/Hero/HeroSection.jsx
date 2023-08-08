@@ -23,32 +23,32 @@ const HeroSection = () => {
           </h1>
           <div className='flex'>
             <a
-              className='m-1'
+              className='m-1 -ml-1'
               href='https://www.facebook.com/Adib.Ahmed317/'
               target='_blank'
               rel='noreferrer'>
-              <img className='h-10 w-10 md:h-12 md:w-12' src={fb} />
+              <img className='h-10 w-10 md:h-12 md:w-12 mr-2' src={fb} />
             </a>
             <a
               className='m-1'
               href='https://github.com/AdibAhmed317'
               target='_blank'
               rel='noreferrer'>
-              <img className='h-10 w-10 md:h-12 md:w-12' src={gh} />
+              <img className='h-10 w-10 md:h-12 md:w-12 mx-2' src={gh} />
             </a>
             <a
               className='m-1'
               href='https://www.instagram.com/__adib.ahmed__/'
               target='_blank'
               rel='noreferrer'>
-              <img className='h-10 w-10 md:h-12 md:w-12' src={ing} />
+              <img className='h-10 w-10 md:h-12 md:w-12 mx-2' src={ing} />
             </a>
             <a
               className='m-1'
               href='https://www.linkedin.com/in/adib-ahmed/'
               target='_blank'
               rel='noreferrer'>
-              <img className='h-10 w-10 md:h-12 md:w-12' src={linkedin} />
+              <img className='h-10 w-10 md:h-12 md:w-12 mx-2' src={linkedin} />
             </a>
           </div>
           <section className='mt-5 lg:mt-8 w-32 text-base py-3 px-6 text-white rounded bg-transparent border-yellow-200 border-2 hover:bg-yellow-200 hover:text-black font-mono text-center'>
