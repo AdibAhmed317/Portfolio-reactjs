@@ -11,7 +11,7 @@ const HeroSection = () => {
     <div id='#intro' className='bg-black flex flex-col md:flex-row font-thin'>
       <div className='bg-black flex-1'>
         <div>
-          <img className='h-auto md:h-auto w-full' src={ad} />
+          <img className='h-[150px] md:h-auto w-full' src={ad} />
         </div>
       </div>
       <div className='flex-1 flex items-center justify-center m-10 md:m-20 text-center md:text-left lg:text-left '>
