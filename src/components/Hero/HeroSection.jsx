@@ -51,7 +51,7 @@ const HeroSection = () => {
               <img className='h-10 w-10 md:h-12 md:w-12' src={linkedin} />
             </a>
           </div>
-          <section className='mt-2 lg:mt-8 w-32 text-base py-3 px-6 text-white rounded bg-transparent border-yellow-200 border-2 hover:bg-yellow-200 hover:text-black font-mono text-center'>
+          <section className='mt-5 lg:mt-8 w-32 text-base py-3 px-6 text-white rounded bg-transparent border-yellow-200 border-2 hover:bg-yellow-200 hover:text-black font-mono text-center'>
             <a
               target='_blank'
               href='https://drive.google.com/file/d/1l9vw7ugjS6UWW0YELIab-BXQLfOjvqrQ/view?usp=sharing'>
