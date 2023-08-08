@@ -34,8 +34,8 @@ const About = () => {
           </button>
         </div>
       </div>
-      <div className='h-full flex-1'>
-        <img className='h-[300px] md:h-auto' src={about} />
+      <div className='h-[350px] md:h-auto flex-1'>
+        <img className='h-full' src={about} />
       </div>
     </div>
   );
