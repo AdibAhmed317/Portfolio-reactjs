@@ -48,7 +48,7 @@ const Contact = () => {
               name='message'
             />
             <button>
-              <h1 className='bg-yellow-200 p-4 w-40 rounded-lg hover:bg-gray-400'>
+              <h1 className='bg-yellow-200 p-4 w-40 rounded-lg hover:bg-gray-400 font-mono'>
                 Send
               </h1>
             </button>
