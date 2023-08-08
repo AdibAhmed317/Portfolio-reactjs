@@ -35,7 +35,7 @@ const About = () => {
         </div>
       </div>
       <div className='h-full flex-1'>
-        <img className='h-full' src={about} />
+        <img className='h-[300px] md:h-auto' src={about} />
       </div>
     </div>
   );
