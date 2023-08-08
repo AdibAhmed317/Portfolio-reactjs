@@ -12,18 +12,17 @@ const HeroSection = () => {
       <div className='flex-1 flex items-center justify-center m-10 md:m-20 text-center md:text-left lg:text-left '>
         <div className=''>
           <h1 className='text-2xl lg:text-5xl text-white mb-6'>
-            Hi,
-            <br /> I am Adib Ahmed
-            <br /> Full Stack Web & Mobile App Developer
+            <section className='text-yellow-200'>Hi,</section>
+            <section>I am Adib Ahmed</section>
+            <section>Full Stack Web Developer</section>
           </h1>
-          <button className='mt-2 lg:mt-8 md:mt-8 mx-auto md:mx-0 text-base py-3 px-6 text-white rounded bg-transparent border-yellow-200 border-2 hover:bg-yellow-200 hover:text-black font-mono'>
-            <a
-              href='https://www.linkedin.com/in/adib-ahmed-9b08551a0/'
-              target='_blank'
-              rel='noreferrer'>
-              Learn More
-            </a>
-          </button>
+          <a
+            className='mt-2 lg:mt-8 md:mt-8 mx-auto md:mx-0 text-base py-3 px-6 text-white rounded bg-transparent border-yellow-200 border-2 hover:bg-yellow-200 hover:text-black font-mono'
+            href='https://www.linkedin.com/in/adib-ahmed-9b08551a0/'
+            target='_blank'
+            rel='noreferrer'>
+            Learn More
+          </a>
         </div>
       </div>
     </div>

@@ -3,7 +3,9 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Dropdown from './components/Navbar/Dropdown';
 import HeroSection from './components/Hero/HeroSection';
+import About from './components/About/About';
 import SkillSection from './components/Skill Section/SkillSection';
+import ProjectList from './components/Project/ProjectList';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +33,9 @@ function App() {
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <HeroSection />
+      <About />
       <SkillSection />
+      <ProjectList />
     </div>
   );
 }
