@@ -6,6 +6,7 @@ import HeroSection from './components/Hero/HeroSection';
 import About from './components/About/About';
 import SkillSection from './components/Skill Section/SkillSection';
 import ProjectList from './components/Project/ProjectList';
+import Contact from './components/Contact/Contact';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,6 +37,7 @@ function App() {
       <About />
       <SkillSection />
       <ProjectList />
+      <Contact />
     </div>
   );
 }

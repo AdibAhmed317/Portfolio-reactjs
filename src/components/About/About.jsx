@@ -23,7 +23,12 @@ const About = () => {
             achievements of a forward-thinking organization.
           </p>
           <button className='bg-transparent rounded-md py-3 px-7 mt-6 text-white border-2 border-yellow-200 hover:bg-yellow-200 hover:text-black'>
-            <Link className='p-10' to='/contact'>
+            <Link
+              to='#contact'
+              smooth={true}
+              duration={500}
+              offset={-50}
+              className='p-4 cursor-pointer'>
               Email Me
             </Link>
           </button>
