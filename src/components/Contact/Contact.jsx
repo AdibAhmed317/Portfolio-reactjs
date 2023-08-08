@@ -42,7 +42,7 @@ const Contact = () => {
               name='user_email'
             />
             <textarea
-              className='bg-gray-400 w-full my-3 pl-3 rounded-lg placeholder:text-black'
+              className='bg-gray-400 w-full my-5 pl-3 rounded-lg placeholder:text-black'
               rows='5'
               placeholder='Message'
               name='message'
