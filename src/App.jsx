@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Dropdown from './components/Navbar/Dropdown';
 import HeroSection from './components/Hero/HeroSection';
-import Skill from './components/Skill Section/Skill';
+import SkillSection from './components/Skill Section/SkillSection';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,12 +27,12 @@ function App() {
   });
 
   return (
-    <>
+    <div className='bg-black m-0 p-0'>
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <HeroSection />
-      <Skill />
-    </>
+      <SkillSection />
+    </div>
   );
 }
 
