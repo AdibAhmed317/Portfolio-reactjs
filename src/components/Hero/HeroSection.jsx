@@ -54,7 +54,7 @@ const HeroSection = () => {
           <section className='mt-5 lg:mt-8 w-32 text-base py-3 px-6 text-white rounded bg-transparent border-yellow-200 border-2 hover:bg-yellow-200 hover:text-black font-mono text-center'>
             <a
               target='_blank'
-              href='https://drive.google.com/file/d/1l9vw7ugjS6UWW0YELIab-BXQLfOjvqrQ/view?usp=sharing'>
+              href='https://drive.google.com/file/d/1ZPsPo9iOZb4qGsr_ePqGeFmA6JiubUm6/view?usp=drive_link'>
               Resume
             </a>
           </section>
