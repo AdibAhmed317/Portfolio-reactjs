@@ -7,6 +7,7 @@ import About from './components/About/About';
 import SkillSection from './components/Skill Section/SkillSection';
 import ProjectList from './components/Project/ProjectList';
 import Contact from './components/Contact/Contact';
+import Notice from './components/Notice';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className='bg-black m-0 p-0'>
+      <Notice />
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <HeroSection />
